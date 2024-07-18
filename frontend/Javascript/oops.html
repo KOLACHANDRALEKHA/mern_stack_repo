@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            oops demo
+        </title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        class Person{
+            constructor(){
+                this.name="lekha"
+                this.age= 20
+            }
+            show(){
+                console.log(this.name,this.age)
+            }
+            displayCaps(){
+                this.name = this.name.toUpperCase();
+            }
+            sayHello(){
+                console.log("hello from parent")
+            }
+        }
+        class Employee extends Person{
+            constructor (name,age,companyName,salary){
+                super(name,age)
+                this.companyName = companyName;
+                this.salary = salary;
+            }
+            showEmpInfo(){
+                console.log(this.companyName,this.salary)
+            }
+            sayHello(){
+                super.sayHello();
+                console.log("hello from child")
+            }
+        }
+        let emp1 = new Employee("lekha",20,"careerx",22);
+        let emp2 = new Employee("kola", 30,"careerx",23);
+        emp2.displayCaps();
+        emp1.show();
+        emp1.showEmpInfo();
+        emp2.show();
+        emp2.showEmpInfo();
+        emp2.sayHello();
+
+
+        //Hoisting
+
+        {
+            var a =50;
+            let x =20;
+        }
+        console.log(a)
+        console.log(x)
+    </script>
+</html>

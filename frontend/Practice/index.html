@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .heading2{
+                font-size: 30px;
+                font-family:italic;
+            }
+            .heading1{
+                color:red;
+                background-color: blue;
+
+            }
+            #head1{
+                color:green
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class ="heading1 heading2" id="head1" style="color:cyan">Demo for id</h1>
+        <h1 id ="head1" id="head2">Demo for class</h1>
+        <p id = "head1">p with id1</p>
+        <p class = "heading1">Demo for class with p tag</p>
+        <p id="head1"></p>
+        <a href = "google.com" class="heading1">google.com</a>
+
+
+        <script>
+            document.getElementById(head1).innerHTML="upated text"
+        </script>
+    </body>
+</html>

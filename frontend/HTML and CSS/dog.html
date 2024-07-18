@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOG Adoption</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            .bgImage{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                background-image: url('https://wallpapercave.com/wp/wp3407738.jpg');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+            }
+            .bgImage::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color:rgba(0, 0, 0, 0.55) ;
+
+            }
+
+            .content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align:justify ;
+                
+            }
+            .content h2{
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .content p{
+                font-size: 20px;
+                color: white;
+                opacity: 0.8;
+            }
+            .content button{
+                padding: 12px 22px;
+                margin-top: 30px;
+                font-size: 22px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: #0077b6;
+                border-radius: 25px;
+                cursor: pointer;
+                opacity: 0.8;
+                transition: opacity 0.5s;
+            }
+            .content button:hover{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bgImage"></div>
+        <div class="content">
+            <h2>Adoption Of Dog</h2>
+            <p>“Adopting one dog will not change the world, but surely for that one dog, the world will change forever.” Hundreds of pets including dogs are abandoned and rescued in India every day. There are many wonderful people across the nation who work extra hours and put in efforts beyond their capacity; however, there is always an insufficiency of funds and communication across the animal activist circuit. Dog adoption is a process of acquiring a dog from a shelter or rescue who is abandoned by their previous owners as opposed to purchasing a dog from a pet store, breeder or other people. The cost incurred for an adopted dog is minimal as the dog might already have received its vaccinations and be neutered or spayed.</p>
+            <button>Submit</button>
+        </div>
+    </body>
+</html>

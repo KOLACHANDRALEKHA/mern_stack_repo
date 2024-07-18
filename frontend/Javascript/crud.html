@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            crud demo
+        </title>
+    </head>
+    <body>
+        <button onclick="clickme()">click me</button>
+        <button onmouseover="overme()">over me</button>
+        <select onchange="getSelected(event)">
+            <option>btech</option>
+            <option>mtech</option>
+        </select>
+        <script>
+            function clickme(){
+                console.log("clicked");
+            }
+            function overme(){
+                console.log("overed me")
+            }
+            function getSelected(){
+                console.log(event.target.value);
+            }
+        </script>
+    </body>
+</html>

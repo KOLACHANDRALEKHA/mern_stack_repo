@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box1{
+                background-color: red;
+                height:122px;
+                width:122px;
+            }
+        </style>
+        <title>
+            demo js
+        </title>
+    </head>
+    <body>
+        <!-- <div class = "box1" id="box"></div>
+        <button onClick="changeMe()">
+             changeMe
+        </button> -->
+        <script>
+            // function changeMe(){
+
+            
+            // document.getElementById("box").style.background="green"
+            // document.getElementById("box").innerHTML="hello div"
+            // }
+            // var a = 30 , b = 20;
+            // console.log(a+b)
+            // // alert("hello")
+            // var a = prompt ("enter number")
+            var a;
+            console.log('value of a is')
+
+            var a;
+            console.log("value of a is",a)
+
+            var first = 10
+            var second = 3
+            var quotient = first / second;
+            console.log("quotient:" , quotient)
+             var result = first**second;
+             console.log(result)
+
+             for( var a=1; a<=5; a++){
+                console.log("statement")
+             }
+
+             //Arrow function
+             function findSumOfTwoNumbers(first,second){
+                return first + second
+             }
+             var sum = findSumOfTwoNumbers(10 , 20)
+             console.log("sum is", sum)
+
+             var findSumOfTwoNumbers = function(first,second){
+                return first+second
+             }
+             var findSumOfTwoNumbers= (first, second) => first+second ? first :second
+
+            //find big
+            var big1 = function(a,b){
+                return a>b?a:b
+            }
+            var bigNumber = big1(10,20)
+            console.log(bigNumber)
+            //arrow function
+            var big2 =(a,b) => a > b? a:b
+
+
+            //Arrays
+            var arr = [ ]
+            console.log(typeof arr)
+
+            var arr =[10,20,30,40,50]
+            console.log(arr.length)
+            console.log(arr[0])
+
+
+            //for-of loop  ----Benefit of this loop is during each iteration of this loop is the variable 'v' will be get the element by element
+            
+        
+            
+
+          
+            </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            constructor demo
+        </title>
+    </head>
+    <body>
+        <script>
+            // function Employee(){
+            //     this.name = "emp1",
+            //     this.age = 20
+            // }
+            // let emp1 = new Employee();
+            // let emp2 = new Employee();
+            // console.log(emp1 , emp2);
+
+
+        //     function Employee(name,age){
+        //         this.name = name,
+        //         this.age = age
+        //     }
+        //     let emp1 = new Employee("lekha",23);
+        //     let emp2 = new Employee("kola",22);
+        //     console.log(emp1 , emp2);
+
+        function Employee(name,age){
+            console.log(this)
+            this.name = name,
+            this.age = age
+            this.showInfo = function(){
+                console.log("indo==", this.name,this.age)
+            }
+        }
+        let emp1 = new Employee("lekha",23);
+
+        let emp2 = new Employee("kola",22);
+         
+        emp1 = showInfo();
+        emp2 = showInfo();
+        </script>
+    </body>
+</html>

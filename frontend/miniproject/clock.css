@@ -1,0 +1,19 @@
+body{
+    /* background-color: blue; */
+    color: brown;
+    background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+#clock {
+    font-size: 175px;
+    width: 900px;
+    margin: 200px;
+    margin-top: 80px;
+    text-align: center;
+    border: 2px solid rgb(157, 152, 152);
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: cornflowerblue;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            promise demo
+        </title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        //I will call you in 10 mins
+        // let callYourPromise = new Promise((fulfilled,rejected) =>{
+
+        // })
+        // console.log(callYourPromise);
+
+
+        // let IamBusy = true;
+        //I will call you in 10mins
+        // let callYourPromise = new Promise((fulfilled,rejected) =>{
+        //     if(iam==false){
+        //         setTimeout(() =>{
+        //             fulfilled("Hello.frnd.Hw r uh")
+
+        //         },10000);
+        //     }
+        //     else{
+        //         setTimeout (() =>{
+        //             rejected("sorry frnd..call you later")
+        //         },10000);
+        //     }
+        // })
+        // console.log(callYourPromise);
+
+
+        // //If you are not really busy
+        // let IamBusy = false;
+
+
+        //Consume a promise
+        // promiseObject.then().catch()
+        // //consume the promise
+        // callYouPromise
+        // .then((message)=>{console.log("message is",message)})
+        // .catch((err) =>{console.log("err is",err)})
+
+        //promise made by music director about new number in 5 days
+
+        let technicalIssues = false
+        let promiseOfMusicDirector = new Promise((fulfilled,rejected)=>{
+            if(technicalIssues == false){
+                setTimeout(() =>{
+                    fulfilled("Hi guys....song is out...enjoy")
+                },5000);
+            }
+            else{
+                setTimeout(()=>{
+                    rejected("sorry guys...new date will be soon")
+                },5000)
+            }
+        }) 
+        //fans  consuming the promise made by music director 
+        promiseOfMusicDirector
+        .then((message)=>{console.log("message is",message)})
+        .catch((err)=>{console.log("err",err)})
+
+        //so,now catch method is executing = rejected value
+        //fulfilled automatically the will result of the (then) will result of the then message
+    </script>
+</html>
